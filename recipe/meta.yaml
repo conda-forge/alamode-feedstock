@@ -10,14 +10,15 @@ source:
   sha256: 43eefd8150c6357c959a67f985d82a7846a0f9bf7980a01528ec3dc30217ac63
 
 build:
-  number: 0
-  skip: True  # [not linux]
+  number: 1
+  skip: True  # [win]
 
 requirements:
   build:
     - {{ compiler('cxx') }}
     - cmake
     - libgomp  # [linux]
+    - llvm-openmp  # [osx]
   host:
     - python
     - libblas
