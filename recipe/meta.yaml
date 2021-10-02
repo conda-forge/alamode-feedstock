@@ -1,5 +1,5 @@
 {% set name = "alamode" %}
-{% set version = "1.2.0" %}
+{% set version = "1.3.0" %}
 
 package:
   name: {{ name|lower }}
@@ -7,11 +7,11 @@ package:
 
 source:
   url: https://github.com/ttadano/{{ name }}/archive/refs/tags/v.{{ version }}.tar.gz
-  sha256: 43eefd8150c6357c959a67f985d82a7846a0f9bf7980a01528ec3dc30217ac63
+  sha256: 23ecc9f870dc28bf2d6efabb5a98b0d476f37231e8d5d9abdd9c87b11ac93d65
 
 build:
-  number: 1
-  skip: True  # [win]
+  number: 0
+  skip: true  # [win]
 
 requirements:
   build:
@@ -28,14 +28,14 @@ requirements:
     - scipy
     - numpy
     - boost
-    - eigen 
+    - eigen
     - spglib
     - fftw
   run:
     - python
 
 test:
-  files: 
+  files:
     - si_alm.in
     - si_phband.in
     - si222.xml
@@ -51,7 +51,7 @@ about:
   license: MIT
   license_family: MIT
   license_file: LICENSE.txt
-  summary: 'Ab initio simulator for thermal transport and lattice anharmonicity'
+  summary: Ab initio simulator for thermal transport and lattice anharmonicity
   description: |
     ALAMODE is a scientific software designed for analyzing lattice
     anharmonicity and lattice thermal conductivity of solids. By
