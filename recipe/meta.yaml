@@ -1,5 +1,5 @@
 {% set name = "alamode" %}
-{% set version = "1.4.0" %}
+{% set version = "1.4.1" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://github.com/ttadano/{{ name }}/archive/refs/tags/v.{{ version }}.tar.gz
-  sha256: b0a80acc70991674c650cbace121855bea8849a7a103f56212da477be122ab12
+  sha256: 2a5d7f5bb991f90dc4cb4a61e0c25ed1a111263ec8105179fef6a79baf4fe091
 
 build:
   number: 0
