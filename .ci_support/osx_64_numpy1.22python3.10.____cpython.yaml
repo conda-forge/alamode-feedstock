@@ -1,7 +1,5 @@
 MACOSX_DEPLOYMENT_TARGET:
 - '10.9'
-boost:
-- 1.78.0
 channel_sources:
 - conda-forge
 channel_targets:
@@ -9,29 +7,29 @@ channel_targets:
 cxx_compiler:
 - clangxx
 cxx_compiler_version:
-- '14'
+- '15'
 fftw:
 - '3'
 libblas:
 - 3.9 *netlib
+libboost_python_devel:
+- '1.82'
 liblapack:
 - 3.9 *netlib
 llvm_openmp:
-- '14'
+- '15'
 macos_machine:
 - x86_64-apple-darwin13.4.0
 numpy:
-- '1.20'
+- '1.22'
 openmpi:
 - '4'
 pin_run_as_build:
-  boost:
-    max_pin: x.x.x
   python:
     min_pin: x.x
     max_pin: x.x
 python:
-- 3.8.* *_cpython
+- 3.10.* *_cpython
 target_platform:
 - osx-64
 zip_keys:
