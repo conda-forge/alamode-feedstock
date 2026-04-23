@@ -1,5 +1,3 @@
-boost:
-- 1.78.0
 cdt_name:
 - cos6
 channel_sources:
@@ -9,7 +7,7 @@ channel_targets:
 cxx_compiler:
 - gxx
 cxx_compiler_version:
-- '10'
+- '12'
 docker_image:
 - quay.io/condaforge/linux-anvil-cos7-x86_64
 fftw:
@@ -19,17 +17,15 @@ libblas:
 liblapack:
 - 3.9 *netlib
 numpy:
-- '1.21'
+- '1.22'
 openmpi:
 - '4'
 pin_run_as_build:
-  boost:
-    max_pin: x.x.x
   python:
     min_pin: x.x
     max_pin: x.x
 python:
-- 3.10.* *_cpython
+- 3.8.* *_cpython
 target_platform:
 - linux-64
 zip_keys:
