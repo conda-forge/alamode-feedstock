@@ -10,7 +10,7 @@ source:
   sha256: 18fb80a183c2a9b68488aeeccd6efa95e8c21d4cb21b08319a557389d55c067a
 
 build:
-  number: 1
+  number: 2
   skip: true  # [win]
 
 requirements:
@@ -28,7 +28,7 @@ requirements:
     - h5py
     - scipy
     - numpy
-    - boost
+    - libboost-python-devel
     - eigen
     - spglib
     - fftw
